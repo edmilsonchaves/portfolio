@@ -1,0 +1,354 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /*background-color:rgba(0, 0, 0, 0.877);*/
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.877) 20%, dodgerblue, rgba(0, 0, 0, 0.877) 92%);
+    color: white;
+    
+}
+
+
+body * {
+    box-sizing: border-box;
+}
+
+
+.img {
+    text-align: left;
+    
+}
+
+.img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5%;
+    border: 2px solid grey;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.651);
+    margin-top: 10px;
+    transition-duration: .5s;
+}
+
+.img img:hover{
+    border: 1px solid #F28A03;
+   
+
+}
+
+.background {
+    background-image: url(./img/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow:hidden;
+    border-radius:10px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid dodgerblue;
+    transition-duration: .5s;
+    
+
+}
+
+.background:hover {
+    box-shadow: 1px 1px 10px 5px dodgerblue;
+
+}
+
+header h1 {
+    color: #28A0D5;
+}
+
+header h2 {
+    padding-top: 10px;
+    color: #F28A03;
+}
+
+.btn {
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+    outline: none;
+    transition-duration: .5s;
+  
+}
+.btn:hover {
+    text-align: center;
+    border-radius: 5px;
+    color:white;
+    box-shadow: 1px 1px 10px 5px dodgerblue;
+    transition-duration: .5s;
+
+}
+
+nav a {
+    font-size: 18px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 50px;
+
+}
+
+.container {
+    padding: 0px 50px;
+    
+}
+
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    align-items: center;
+    padding: 10px 2px;
+    
+    
+
+}
+
+.externo {
+    text-decoration: none;
+
+}
+
+a.externo::after {
+    content: "\00A0\1F517";
+    
+}
+a.externo:hover {
+    text-decoration: underline;
+    transition-duration: 1ms;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+section{
+    display: none;
+}
+
+.div_skills {
+    width: 100%;
+    text-align: center;
+}
+    
+.logo_skills {
+    width: 200px;
+    margin-top: 8px;
+
+}
+
+.myskills p {
+    margin-top: 30px;
+    
+
+}
+
+.conteudo_habilidades {
+    display: flex;
+    justify-content: center;
+}
+
+.cont_skills {
+    display: flex;
+    flex-direction: column;
+    text-indent: 20px;
+
+}
+
+.cont_skills p {
+    width: 80vw;
+    padding-bottom: 15px;
+    margin-top: 20px;
+}
+
+.div_projetos {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    text-align: center;
+
+
+
+}
+
+.breve {
+    background-image: url(img/soon.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 250px;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;;
+    line-height: 250px;
+    font-size: xx-large;
+    text-decoration: dotted;
+    border: 1px solid dodgerblue;
+   
+    
+
+}
+
+
+main h3 {
+    padding-top: 15px
+}
+
+main p{
+    text-indent: 20px;
+    padding: 5px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main a {
+    color:#ff9100;
+    text-shadow: black 2px;
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: rgba(0, 0, 0, 0.318);
+    border-radius: 3px;
+    padding: 0px 5px;
+    
+}
+
+.emailContact {
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+}
+
+.emailContact p {
+    width: 80vw;
+
+}
+
+.formulario {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+input {
+    width: 80vw;
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    padding-left: 10px;
+
+}
+
+textarea {
+    width: 80vw;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    padding-left: 10px;
+    
+}
+
+.enviar {
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    margin: 10px 0px;
+    cursor:pointer;
+
+
+}
+footer img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+
+
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+
+}
+
+footer a {
+    margin: 20px;
+    text-align: center;
+    color: white;
+
+}
+footer p {
+    margin: 2px;
+}
+
+
+
+@media only screen and (max-width: 650px) {
+    .container {
+        box-sizing: border-box;
+        padding: 0px 30px;
+        margin: auto;
+    }
+    .div_projetos {
+        display: block;
+        box-sizing: border-box;
+
+    }
+    .b2, .b3 {
+        display: none;
+    } 
+
+    ul {
+        display: block;
+        padding: 0;
+    
+        
+
+    }
+
+    .background h2, h1 {
+        font-size: 20px;
+
+    }
+
+    .background {
+        background-image: url(./img/banner.jpg);
+    }
+
+    nav a {
+        border: 1px solid grey;
+        margin: 10px 0px;
+        border-radius: 10px;
+        
+    }
+
+    .img {
+        text-align: center;
+    }
+
+    .conteudo_habilidades{
+        display: block;
+    }
+
+
+
+}
+    
